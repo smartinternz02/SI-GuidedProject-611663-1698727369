@@ -3,10 +3,12 @@ import os
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from flask import Flask , request, render_template
+#from werkzeug.utils import secure_filename
+#from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 
-model = load_model("adp.h5",compile=False)
+model = load_model("alzheimer_prediction.h5",compile=False)
                  
 @app.route('/')
 def index():
@@ -30,9 +32,10 @@ def upload():
         print(x)
         y=model.predict(x)
         preds=np.argmax(y, axis=1)
+        #preds = model.predict_classes(x)
         print("Prediction",preds)
         index = ['Mild Demented','Moderate Demented','Non Demented','Very Mild Demented']
-        text = "The person is " + str(index[preds[0]])
+        text = "The person has " + str(index[preds[0]])
     return text
 if __name__ == '__main__':
     app.run(debug = False, threaded = False)

@@ -11,58 +11,7 @@
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
-    <style>
-        .navbar-brand {
-            display: inline-block;
-            padding-top: 0.3125rem;
-            padding-bottom: 0.3125rem;
-            margin-right: 1rem;
-            font-size: 2rem;
-            line-height: inherit;
-            white-space: nowrap;
-        }
-
-        .btn-info {
-            background-color: #25b89a;
-            color: #F1F6F9;
-        }
-
-        .btn-info:hover {
-            background-color: #156a59;
-        }
-
-        .bg-dark {
-            background-color: #4B92BB!important;
-        }
-
-        #result {
-            font-weight: bold; 
-      		color: F1F6F9; 
-        }
-
-        body {
-            background-color: #212A3E;
-            color: azure;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-		.team-list li {
-    		padding-right: 10px; 
-		}
-
-		.pb-3, .py-3 {
-    		padding-bottom: 0rem!important;
-		}
-
-        #result {
-            font-weight: bold;
-            color: F1F6F9;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -100,7 +49,7 @@
                 <div class="col-sm-4 bd d-flex justify-content-center align-items-center">
                     <img
                         src="https://a.storyblok.com/f/176343/740x416/b97226ff46/alzheimers-disease-the-value-of-accurate-diagnosis-teaser.jpg"
-                        height="45%" width="110%">
+                        height="45%" width="110%" style="border-radius: 10px;">
                 </div>
 
                 <div id="upload-section" class="col-sm-12">
@@ -148,15 +97,12 @@
     </div>
 
     <ul class="list-unstyled team-list">
-		<li>Team</li>
-		<li class="text-muted"><a href="https://www.linkedin.com/in/jithu-joji/" target="_blank">Jithu Joji</a></li>
-		<li class="text-muted"><a href="https://www.linkedin.com/in/arun-george-viji-34188a183/" target="_blank">Arun George Viji</a></li>
-		<li class="text-muted"><a href="https://www.linkedin.com/in/saathwick-santhes-a44949299/" target="_blank">Saathwick Santhes S</a></li>
-		<li class="text-muted"><a href="https://www.linkedin.com/in/mahaashwanth/" target="_blank">Maha Ashwanth</a></li>
-	</ul>
-	
-	
-	
+        <li>Team</li>
+        <li><a class="text-muted" href="https://www.linkedin.com/in/jithu-joji/" target="_blank">Jithu Joji</a></li>
+        <li><a class="text-muted" href="https://www.linkedin.com/in/arun-george-viji-34188a183/" target="_blank">Arun George Viji</a></li>
+        <li><a class="text-muted" href="https://www.linkedin.com/in/saathwick-santhes-a44949299/" target="_blank">Saathwick Santhes S</a></li>
+        <li><a class="text-muted" href="https://www.linkedin.com/in/mahaashwanth/" target="_blank">Maha Ashwanth</a></li>
+    </ul>
   </footer>
 
 <footer>
